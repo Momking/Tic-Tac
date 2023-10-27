@@ -56,6 +56,14 @@ class Main:
             self.screen.blit(text_surface, b.topleft)
             if x in range(450,550) and y in range(500,540):
                 self.__init__()
+
+        count = 0
+        for i in range(3):
+            for j in range(3):
+                if self.gameBoard[i][j] != 0:
+                    count += 1
+        if count == 9:
+            self.__init__()
         py.display.flip()
             
     def result(self):
