@@ -10,7 +10,7 @@ class Main:
         self.won1 = False
         self.won2 = False
         self.gameBoard = [[0 for _ in range(3)] for _ in range(3)]
-        self.image = py.image.load("Tic Tac/space1.jpg")
+        self.image = py.image.load("space1.jpg")
         self.scaled = py.transform.scale(self.image, (1000,800))
         self.screen = py.display.set_mode((1000,800))
         self.display_screen()
